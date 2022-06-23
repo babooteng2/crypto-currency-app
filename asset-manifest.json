@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crypto-currency-app/static/css/main.26973069.chunk.css",
-    "main.js": "/crypto-currency-app/static/js/main.c8424ddc.chunk.js",
-    "main.js.map": "/crypto-currency-app/static/js/main.c8424ddc.chunk.js.map",
+    "main.js": "/crypto-currency-app/static/js/main.731d7198.chunk.js",
+    "main.js.map": "/crypto-currency-app/static/js/main.731d7198.chunk.js.map",
     "runtime-main.js": "/crypto-currency-app/static/js/runtime-main.130d1f64.js",
     "runtime-main.js.map": "/crypto-currency-app/static/js/runtime-main.130d1f64.js.map",
     "static/js/2.c7217bc6.chunk.js": "/crypto-currency-app/static/js/2.c7217bc6.chunk.js",
@@ -1201,6 +1201,6 @@
     "static/js/runtime-main.130d1f64.js",
     "static/js/2.c7217bc6.chunk.js",
     "static/css/main.26973069.chunk.css",
-    "static/js/main.c8424ddc.chunk.js"
+    "static/js/main.731d7198.chunk.js"
   ]
 }
