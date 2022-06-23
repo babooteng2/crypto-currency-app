@@ -2,6 +2,7 @@ import ApexChart from "react-apexcharts";
 import { IChartTypesProps } from "../routes/Chart";
 
 function CandleChart({ data, isDark }: IChartTypesProps) {
+  console.log("data : ", data);
   return (
     <ApexChart
       type="candlestick"

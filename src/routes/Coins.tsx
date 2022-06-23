@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { fetchCoins } from "../api";
 import Header from "../component/Header";
+import Icon from "react-crypto-icons";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -45,11 +46,11 @@ const Loader = styled.span`
   text-align: center;
   display: block;
 `;
-const Img = styled.img`
+/* const Img = styled.img`
   width: 35px;
   height: 35px;
   margin-right: 1em;
-`;
+`; */
 interface ICoin {
   id: string;
   name: string;
@@ -74,17 +75,19 @@ function Coins() {
         <Loader>Loading...</Loader>
       ) : (
         <CoinsList>
-          {data?.slice(0, 100).map((coin, index) => (
+          {data?.slice(0, 50).map((coin, index) => (
             <Coin
               key={coin.id}
               style={{
                 animation: `2s ease .${index}s 1 normal none running Fadein`,
               }}>
               <Link to={`/${coin.id}`} state={{ name: coin.name, rank: coin.rank }}>
-                <Img
-                  src={`https://cryptoicon-api.vercel.app/api/icon/${coin.symbol.toLowerCase()}`}
+                {/* <Img
+                  //src={`https://cryptoicon-api.vercel.app/api/icon/${coin.symbol.toLowerCase()}`}
+                  src={`${crypto}`}
                   alt={coin.name}
-                />
+                /> */}
+                <Icon name={coin.symbol.toLowerCase()} size={25} />
                 {coin.name} &rarr;
               </Link>
             </Coin>
