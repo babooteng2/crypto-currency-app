@@ -16,7 +16,7 @@ export function fetchCoinHistory(coinId: string) {
   const endDate = Math.floor(Date.now() / 1000);
   /* const startDate = endDate - 60 * 60 * 24 * 7 * 2; */
   // coin paprika 정책으로 인해 OHLCV historical data를 하루치만 가져올 수 있음
-  const startDate = endDate - 60 * 24 * 7 * 2;
+  const startDate = endDate - 60 * 60 * 24;
   return fetch(
     `${BASE_URL}/coins/${coinId}/ohlcv/historical?start=${startDate}&end=${endDate}`
   ).then((response) => response.json());
