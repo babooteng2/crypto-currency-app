@@ -51,6 +51,9 @@ const Loader = styled.span`
   height: 35px;
   margin-right: 1em;
 `; */
+const Img = styled(Icon)`
+  margin-right: 1em;
+`;
 interface ICoin {
   id: string;
   name: string;
@@ -87,7 +90,7 @@ function Coins() {
                   src={`${crypto}`}
                   alt={coin.name}
                 /> */}
-                <Icon name={coin.symbol.toLowerCase()} size={25} />
+                <Img name={coin.symbol.toLowerCase()} size={25} />
                 {coin.name} &rarr;
               </Link>
             </Coin>
